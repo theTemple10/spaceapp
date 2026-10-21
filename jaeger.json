@@ -1,0 +1,220 @@
+{
+  "data": [
+    {
+      "traceID": "4584c22940abb479c93b94b4a301e793",
+      "spans": [
+        {
+          "traceID": "4584c22940abb479c93b94b4a301e793",
+          "spanID": "ec1d588539b77e9a",
+          "operationName": "POST /demo",
+          "references": [],
+          "startTime": 1792552356472161,
+          "duration": 1789006,
+          "tags": [
+            {
+              "key": "http.request.method",
+              "type": "string",
+              "value": "POST"
+            },
+            {
+              "key": "http.response.status_code",
+              "type": "int64",
+              "value": 200
+            },
+            {
+              "key": "http.route",
+              "type": "string",
+              "value": "/demo"
+            },
+            {
+              "key": "otel.scope.name",
+              "type": "string",
+              "value": "space-api"
+            },
+            {
+              "key": "space.request_id",
+              "type": "string",
+              "value": "req:demo00000001"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "4584c22940abb479c93b94b4a301e793",
+          "spanID": "47f77bc14393a6af",
+          "operationName": "temporal.activity",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "4584c22940abb479c93b94b4a301e793",
+              "spanID": "034dc755cef753d7"
+            }
+          ],
+          "startTime": 1792552358074000,
+          "duration": 102000,
+          "tags": [
+            {
+              "key": "otel.scope.name",
+              "type": "string",
+              "value": "space-worker"
+            },
+            {
+              "key": "space.duration_ms",
+              "type": "int64",
+              "value": 102
+            },
+            {
+              "key": "space.outcome",
+              "type": "string",
+              "value": "COMPLETED"
+            },
+            {
+              "key": "space.pane_id",
+              "type": "string",
+              "value": "pane:demo"
+            },
+            {
+              "key": "space.room_id",
+              "type": "string",
+              "value": "room:demo"
+            },
+            {
+              "key": "space.trace_id",
+              "type": "string",
+              "value": "req:demo00000001"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "temporal.activity_id",
+              "type": "string",
+              "value": "1"
+            },
+            {
+              "key": "temporal.activity_type",
+              "type": "string",
+              "value": "runCodexAppServerTurn"
+            },
+            {
+              "key": "temporal.attempt",
+              "type": "int64",
+              "value": 1
+            },
+            {
+              "key": "temporal.run_id",
+              "type": "string",
+              "value": "2d8563d7-0058-4433-9b91-3aadc1ee39de"
+            },
+            {
+              "key": "temporal.workflow_id",
+              "type": "string",
+              "value": "workflow:codex-app-server:room:demo:pane:demo:req:demo00000001"
+            },
+            {
+              "key": "temporal.workflow_type",
+              "type": "string",
+              "value": "codexAppServerTurnWorkflow"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "4584c22940abb479c93b94b4a301e793",
+          "spanID": "034dc755cef753d7",
+          "operationName": "temporal.workflow",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "4584c22940abb479c93b94b4a301e793",
+              "spanID": "ec1d588539b77e9a"
+            }
+          ],
+          "startTime": 1792552356510000,
+          "duration": 1674000,
+          "tags": [
+            {
+              "key": "otel.scope.name",
+              "type": "string",
+              "value": "space-worker"
+            },
+            {
+              "key": "space.duration_ms",
+              "type": "int64",
+              "value": 1674
+            },
+            {
+              "key": "space.outcome",
+              "type": "string",
+              "value": "COMPLETED"
+            },
+            {
+              "key": "space.pane_id",
+              "type": "string",
+              "value": "pane:demo"
+            },
+            {
+              "key": "space.room_id",
+              "type": "string",
+              "value": "room:demo"
+            },
+            {
+              "key": "space.trace_id",
+              "type": "string",
+              "value": "req:demo00000001"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "temporal.run_id",
+              "type": "string",
+              "value": "2d8563d7-0058-4433-9b91-3aadc1ee39de"
+            },
+            {
+              "key": "temporal.workflow_id",
+              "type": "string",
+              "value": "workflow:codex-app-server:room:demo:pane:demo:req:demo00000001"
+            },
+            {
+              "key": "temporal.workflow_type",
+              "type": "string",
+              "value": "codexAppServerTurnWorkflow"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "space-api",
+          "tags": []
+        },
+        "p2": {
+          "serviceName": "space-worker",
+          "tags": []
+        }
+      },
+      "warnings": null
+    }
+  ],
+  "total": 0,
+  "limit": 0,
+  "offset": 0,
+  "errors": null
+}

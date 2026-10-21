@@ -1,0 +1,20 @@
+{
+  "traceId": "4584c22940abb479c93b94b4a301e793",
+  "spanIds": {
+    "api": "ec1d588539b77e9a",
+    "workflow": "034dc755cef753d7",
+    "activity": "47f77bc14393a6af"
+  },
+  "api": {
+    "exported": 1,
+    "dropped": 0,
+    "failed": 0
+  },
+  "worker": {
+    "exported": 2,
+    "dropped": 0,
+    "failed": 0
+  },
+  "ui": "http://127.0.0.1:16686/trace/4584c22940abb479c93b94b4a301e793",
+  "syntheticActivity": true
+}
